@@ -11,6 +11,9 @@ body, button {
     //Tamaño de elementos para utilizar EMs posteriormente
     font-size: 16px;
     line-height: 1.25em;
+
+    //Específico en tablas
+    overflow-x: hidden;
 }
 
 .container {
@@ -117,8 +120,6 @@ body, button {
             height: 420px;
             margin-top: 12px;
 
-            background-color: #c3c3c3;
-
             & .tick text {
                 font-family: 'Titillium Web';
                 font-style: normal;
@@ -141,19 +142,47 @@ body, button {
 
             //Tabla
             &.viz-table {
-                width: 860px;
-                height: 520px;
+                max-width: 840px;
+                height: auto;
                 margin-top: 12px;
+                overflow-x: auto;
 
-                background-color: #c3c3c3;
-                overflow-x: visible;
+                font-size: 0.9em;
+
+                table,th {
+                    border: 1px solid;
+                }
+
+                td {
+                    border-right: 1px solid;
+                }
+
+                table {
+                    width: 100%;
+                    height: 100%;
+
+                    table-layout:fixed;
+                    border-collapse: collapse;
+                }
 
                 thead {
-                    background-color: red;
+                    background-color: #E37A42;
                 }
 
                 tbody {
-                    background-color: blue;
+                    .table__main {
+                        font-weight: 700;
+                    }
+                    .table__main:first-child td {
+                        padding-top: 0px;
+                    }
+                    .table__main:not(:first-child) td {
+                        padding-top: 16px;
+                    }
+                    td {
+                        padding-top: 4px;
+                    }
+                    text-align: center;
                 }
             }
         }
@@ -173,6 +202,7 @@ body, button {
 
                 &--data {
                     margin-right: 16px;
+                    width: 85%;
                 }
 
                 &--data span:first-of-type {
@@ -253,7 +283,7 @@ body, button {
 
     &__animate {
         height: 32px;
-        border: 1.2px solid #41C0B4;
+        border: 1.2px solid #E37A42;
         
         img {
             margin-right: 3px;
@@ -289,14 +319,14 @@ body, button {
 }
 
 .link {
-    border-bottom: 2px solid #4E7E7E;
+    border-bottom: 2px solid #F8B05C;
     color: #000;
     text-decoration: none;
 }
 
 .btn_share {
-    background-color: #e1e1e1;
-    border: 2px solid #4E7E7E;
+    background-color: #fcfcfc;
+    border: 2px solid #F8B05C;
     padding: 0px 8px;
     border-radius: 3px;
 
@@ -317,7 +347,7 @@ body, button {
 //Pestañas inferiores
 .tabs {
     width: 100%;
-    height: 32px;
+    height: 28px;
 
     .l-tabs {
         width: 100%;
@@ -351,7 +381,7 @@ body, button {
             cursor: pointer;
 
             //Estilo
-            background-color: #fafbfd;
+            background-color: #fcfcfc;
             color: #000;
 
             //Estado active
@@ -360,7 +390,7 @@ body, button {
                 color: #000;
 
                 border-top: 0px;
-                border-bottom: 2px solid #4E7E7E;
+                border-bottom: 2px solid #F8B05C;
             }
         }        
     }
@@ -375,7 +405,7 @@ body, button {
     max-width: 135px;
     height: auto;
     padding: 8px;
-    background-color: #F4F4F4;
+    background-color: #fcfcfc;
 
     &--title {
         font-style: normal;
