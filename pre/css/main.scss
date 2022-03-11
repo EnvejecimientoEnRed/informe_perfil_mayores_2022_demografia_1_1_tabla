@@ -117,7 +117,6 @@ body, button {
 
         //Visualización
         &__viz {
-            height: 420px;
             margin-top: 12px;
 
             & .tick text {
@@ -143,7 +142,7 @@ body, button {
             //Tabla
             &.viz-table {
                 max-width: 840px;
-                height: auto;
+                height: 520px;
                 margin-top: 12px;
                 overflow-x: auto;
 

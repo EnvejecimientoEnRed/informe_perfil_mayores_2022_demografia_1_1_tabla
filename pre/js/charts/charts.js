@@ -12,20 +12,20 @@ export function initChart(iframe) {
     /////
 
     //Iframe
-    setFixedIframeUrl('tabla_poblacion_municipios');
+    setFixedIframeUrl('informe_perfil_mayores_2022_demografia_1_5','tabla_poblacion_municipios');
 
     //Redes sociales > Antes tenemos que indicar cuál sería el texto a enviar
     setRRSSLinks('tabla_poblacion_municipios');
 
     //Captura de pantalla de la visualización
     setChartCanvas();
-    setCustomCanvas();
+    //setCustomCanvas();
 
     let pngDownload = document.getElementById('pngImage');
 
     pngDownload.addEventListener('click', function(){
         setChartCanvasImage('tabla_poblacion_municipios');
-        setChartCustomCanvasImage('tabla_poblacion_municipios');
+        //setChartCustomCanvasImage('tabla_poblacion_municipios');
     });
 
     //Altura del frame

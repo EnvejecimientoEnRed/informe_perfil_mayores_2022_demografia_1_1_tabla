@@ -14,7 +14,6 @@ function getUrlParams() {
     const params = new URLSearchParams(window.location.search);
 
     //Visualización y tipo de iframe
-    const viz = params.get('chart');
     const iframe = params.get('iframe');
 
     initChart(iframe);
