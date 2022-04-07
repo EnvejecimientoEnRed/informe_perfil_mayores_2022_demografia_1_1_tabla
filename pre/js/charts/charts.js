@@ -12,7 +12,7 @@ export function initChart(iframe) {
     /////
 
     //Iframe
-    setFixedIframeUrl('informe_perfil_mayores_2022_demografia_1_5','tabla_poblacion_municipios');
+    setFixedIframeUrl('informe_perfil_mayores_2022_demografia_1_1_tabla','tabla_poblacion_municipios');
 
     //Redes sociales > Antes tenemos que indicar cuál sería el texto a enviar
     setRRSSLinks('tabla_poblacion_municipios');
