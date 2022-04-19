@@ -149,15 +149,15 @@ button {
 
             //Tabla
             &.viz-table {
-                max-width: 840px;
+                max-width: 842px;
                 height: 520px;
-                //margin-top: 8px;
                 overflow-x: auto;
 
                 font-size: 0.9em;
 
                 table,th {
                     border: 1px solid;
+                    vertical-align: middle;
                 }
 
                 td {
@@ -173,7 +173,8 @@ button {
                 }
 
                 thead {
-                    background-color: #E37A42;
+                    background-color: #F8B05C;
+                    height: 80px;
                 }
 
                 tbody {
