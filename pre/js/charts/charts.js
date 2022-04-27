@@ -3,7 +3,7 @@ import { setChartCanvas, setChartCanvasImage } from '../modules/canvas-image';
 import { setRRSSLinks } from '../modules/rrss';
 import { setFixedIframeUrl } from './chart_helpers';
 
-export function initChart(iframe) {
+export function initChart() {
     /////
     /////
     // Resto
@@ -26,5 +26,5 @@ export function initChart(iframe) {
     });
 
     //Altura del frame
-    setChartHeight(iframe);
+    setChartHeight();
 }
